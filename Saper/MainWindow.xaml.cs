@@ -43,7 +43,7 @@ namespace Saper
             else
                 button.Content = engine.BombField[y][x];        
         }
-
+        
         private void OpenFields(int x, int y)
         {
           
