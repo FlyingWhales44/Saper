@@ -9,6 +9,7 @@ namespace Saper
     class SaperEngine
     {
         public List<List<int>> BombField { get; set; }
+        public List<List<bool>> Flags { get; set; }
         public int boardX, boardY;
         Random rnd;
 
@@ -67,6 +68,7 @@ namespace Saper
             boardY = bY;
 
             BombField = new List<List<int>>();
+            Flags = new List<List<bool>>();
 
             for (int i = 0; i < boardY; i++)
             {
@@ -74,6 +76,14 @@ namespace Saper
                 for (int j = 0; j < boardX; j++)
                     BombField[i].Add(0);
             }
+
+            for (int i = 0; i < boardY; i++)
+            {
+                Flags.Add(new List<bool>());
+                for (int j = 0; j < boardX; j++)
+                    Flags[i].Add(true);
+            }
+
             CreateBombs(Bombs);
             setAllFields();
         }      
