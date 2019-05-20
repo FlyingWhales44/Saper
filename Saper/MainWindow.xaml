@@ -16,6 +16,8 @@
         <TextBox x:Name="BoardSizeY" Grid.Column="1" Margin="10,0,10,213" TextWrapping="Wrap" Text="8" Height="23" VerticalAlignment="Bottom"/>
         <TextBox x:Name="BombQuantity" Grid.Column="1" Margin="10,0,10,151" TextWrapping="Wrap" Text="8" Height="23" VerticalAlignment="Bottom"/>
         <Button x:Name="Start" Content="Start" Grid.Column="1" Margin="10,0,10,10" Height="20" VerticalAlignment="Bottom"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" TextWrapping="Wrap" Text="Rozmiar Planszy" VerticalAlignment="Top" Width="66" TextChanged="TextBox_TextChanged"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,117,0,0" TextWrapping="Wrap" Text="Ilość Bomb" VerticalAlignment="Top" Width="66"/>
 
 
     </Grid>
